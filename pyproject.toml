@@ -3,8 +3,9 @@ name = "snake-template"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
+    "apache-airflow>=2.10.3",
     "pytest>=8.3.3",
     "ruff>=0.7.3",
 ]

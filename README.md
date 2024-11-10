@@ -1,21 +1,36 @@
-# Python Repository Template (3.13)
+# Око Саурона
 
-## Overview
+## Обзор
 
-This repository template provides a basic structure for your Python
-projects. It includes essential files and directories to ensure
-consistency across all projects.
+Сервис для получение актуальных геоданных
 
-## Dependencies
+## Локальная разработка
 
-The following libraries are required:
+1. Установить зависимости:
 
-* Python 3.x
-* `ruff` library for linting
+* [Docker](https://www.docker.com)
+* [Minikube](https://kubernetes.io/ru/docs/tasks/tools/install-minikube/)
+* [Helm](https://helm.sh)
+* [Python 3.13](https://www.python.org)
 
-## Folders and Files**
+MacOS:
 
-* `src/`: The source code directory, containing main.py and other Python
-files.
-* `tests/`: The test directory, containing test_main.py and other test
-files.
+```bash
+brew install minikube kubectl helm
+```
+
+2. Запуск локальной среды minikube:
+
+```bash
+minikube start
+```
+
+3. Запуск используя Makefile
+
+`make deploy` - Поднятие
+
+
+
+### Гайд по production-окружению:
+
+https://airflow.apache.org/docs/helm-chart/stable/production-guide.html#webserver-secret-key
